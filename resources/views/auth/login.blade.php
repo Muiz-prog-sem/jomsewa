@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,18 +11,20 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js"></script>
 </head>
- 
+
 <body>
+    <!-- Section start -->
     <section class="bg-gray-500 dark:bg-gray-900">
         <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
             <div class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
                 Jom Sewa
             </div>
             <?php
+
             use Illuminate\Support\Facades\Auth;
 
             //dd(Auth::check(), Auth::user());
-            
+
             ?>
             <img src="{{ asset('img/logo.png') }}" style="width: 100px" alt="">
             <br>
@@ -78,5 +80,5 @@
         </div>
     </section>
 </body>
- 
+
 </html>
